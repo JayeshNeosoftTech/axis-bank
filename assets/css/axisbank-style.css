@@ -1,0 +1,98 @@
+
+/* first section style */
+
+/* heading-content style start */
+.first-section .heading-content{
+    text-align: center;
+    position: relative;
+    padding-top: 88px;
+}
+.first-section .heading-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 218px;
+    background: #F0F0F0;
+    z-index: -1;
+}
+.first-section .heading-content .heading{
+    color: #454545;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+.heading-content .heading span{
+    color: #931344;
+    font-style: italic;
+}
+
+/* Searchbar style */
+.first-section .heading-content .searchbar{
+    width: 90%;
+    padding: 15px 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 56px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    margin: 25px auto 0;
+}
+.searchbar .profile-wrapper{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+.searchbar .input-data{
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 500;
+    flex-grow: 1;
+    text-align: start;
+ }
+ .searchbar .inputfield-btn{
+    background: transparent;
+    cursor: pointer;
+ }
+ .searchbar .inputfield-btn:hover span{
+    opacity: 0.9;
+ }
+ .searchbar .inputfield-btn span{
+    font-size: 38px;
+ }
+ .searchbar .inputfield-btn .icon-send-icon{
+    margin-left: 25px;
+ }
+/* heading-content style end */
+
+/* seletion option slider styel start */
+.first-section .selectionopt-slider{
+    width: 85%;
+    margin: 36px auto 0;
+ }
+ .owl-carousel .owl-stage-outer{
+    width: 100%;
+ }
+ .selectionopt-slider .selectionopt-carousel
+ .slide a{
+    position: relative;
+    white-space: nowrap;
+    padding-right: 20px;
+ }
+ .selectionopt-slider .selectionopt-carousel
+ .slide a::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: #393939;
+    top: 50%;
+    left: -20px;
+    transform: translate(20%, -50%);
+ }
+
+/* commonly used classes*/
+.comm-para{
+    font-size: 15px;
+    line-height: 18px;
+    color: #333333;
+}
