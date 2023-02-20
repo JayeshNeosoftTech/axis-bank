@@ -397,6 +397,67 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Latest News -->
+            <!-- slider code -->
+            <div class="latestupdate-wrapper d-flex">
+              <div class="title">
+                <h4 class="text-capitalize">Latest</h4>
+                <p class="text-capitalize">updates</p>
+              </div>
+              <div class="latestupdate-slider">
+                <div class="owl-carousel latestupdate-carousel owl-theme">
+                    <div class="slide updates">
+                      <div>
+                        <p class="first-para">अब सेवाएं आपकी अपनी</p>
+                        <p class="second-para">हिंदी</p>
+                        <p class="third-para">भाषा में।</p>
+                      </div>
+                    </div>
+
+                    <div class="slide updates">
+                      <div>
+                        <p class="first-para">अब सेवाएं आपकी अपनी</p>
+                        <p class="second-para">हिंदी</p>
+                        <p class="third-para">भाषा में।</p>
+                      </div>
+                    </div>
+
+                    <div class="slide updates">
+                      <div>
+                        <p class="first-para">अब सेवाएं आपकी अपनी</p>
+                        <p class="second-para">हिंदी</p>
+                        <p class="third-para">भाषा में।</p>
+                      </div>
+                    </div>
+
+                    <div class="slide updates">
+                      <div>
+                        <p class="first-para">अब सेवाएं आपकी अपनी</p>
+                        <p class="second-para">हिंदी</p>
+                        <p class="third-para">भाषा में।</p>
+                      </div>
+                    </div>
+
+                    <div class="slide updates">
+                      <div>
+                        <p class="first-para">अब सेवाएं आपकी अपनी</p>
+                        <p class="second-para">हिंदी</p>
+                        <p class="third-para">भाषा में।</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- complaint content -->
+            <div class="complaint-wrapper d-flex flex-nowrap">
+              <div class="title">
+                <h3 class="text-capitalize mb-0">Raise A Complaint</h3>
+                <a class="text-capitalize" href="#">Click here</a>
+              </div>
+              <div class="second-part"></div>
+            </div>
         </div>
         <div class="col-lg-3">
 
@@ -1040,6 +1101,7 @@
     </div>
   </div>
 
+
   <!--container end-->
   <script src="./assets/css/jquery.js"></script>
   <script src="./assets/js/select2-4.1.0-rc.0/select2-4.1.0-rc.0/dist/js/select2.min.js"></script>
@@ -1056,15 +1118,49 @@
 <script>
     $(document).ready(function () {
         $(".owl-carousel.selectionopt-carousel").owlCarousel({
-            /* items:4, */
-            margin: 5,
             loop:true,
             nav:true,
+            navText:['<img class="prev-arrow" src="./assets/images/icons/left-arow.svg" alt="left">', '<img class="next-arrow" src="./assets/images/icons/left-arow.svg" alt="left">'],
             dots:false,
             autoplay:true,
             autoplaySpeed:500,
             smartSpeed:500,
             autoplayHoverPause:true,
+        });
+    });
+
+    $(document).ready(function () {
+        $(".owl-carousel.latestupdate-carousel").owlCarousel({
+            /* items:1, */
+            margin: 10,
+            loop:true,
+            nav: false,
+            dots: true,
+            dotsEach: 1,
+            autoplay:true,
+            autoplaySpeed:200,
+            smartSpeed:200,
+            autoplayHoverPause:true,
+            rewind: true,
+            /* responsive:
+            {
+              425:{
+                items: 2
+              },
+              768:{
+                items: 2.5
+              },
+              900:{
+                items: 3
+              },
+              992:{
+                items: 2.5
+              }
+              ,
+              1200:{
+                items: 3
+              }
+            } */
         });
     });
 </script>

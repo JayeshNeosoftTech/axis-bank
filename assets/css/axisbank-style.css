@@ -65,17 +65,27 @@
 
 /* seletion option slider styel start */
 .first-section .selectionopt-slider{
-    width: 85%;
+    width: 100%;
     margin: 36px auto 0;
+    position: relative;
+ }
+ .owl-carousel.selectionopt-carousel{
+    width: 80%;
+    margin: 0 auto;
  }
  .owl-carousel .owl-stage-outer{
     width: 100%;
+    z-index: 1;
  }
  .selectionopt-slider .selectionopt-carousel
  .slide a{
     position: relative;
     white-space: nowrap;
     padding-right: 20px;
+ }
+ .selectionopt-slider .selectionopt-carousel
+ .slide a:hover{
+    color: #931344;
  }
  .selectionopt-slider .selectionopt-carousel
  .slide a::before{
@@ -90,6 +100,167 @@
     transform: translate(20%, -50%);
  }
 
+.owl-carousel.selectionopt-carousel .owl-nav{
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    left: -10px;
+    width: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: fit-content;
+    align-items: center;
+    z-index: 0;
+}
+.owl-carousel.selectionopt-carousel 
+.owl-nav button.owl-next{
+    transform: rotate(180deg);
+}
+
+.owl-carousel.selectionopt-carousel 
+.owl-nav .owl-prev, 
+.owl-carousel.selectionopt-carousel 
+.owl-nav .owl-next{
+    border: none !important;
+    background-color: transparent;
+}
+.owl-carousel.selectionopt-carousel 
+.owl-nav button.owl-prev:hover,
+.owl-carousel.selectionopt-carousel 
+.owl-nav button.owl-next:hover
+{
+    border: none !important;
+    background-color: transparent;
+}
+
+.selectionopt-carousel button.owl-prev:after, button.owl-next:after{
+    display: none;
+}
+
+/* Latest */
+.latestupdate-wrapper{
+    padding-left: 55px;
+    margin-top: 85px;
+    gap: 30px;
+    position: relative;
+}
+.latestupdate-wrapper .title{
+    width: 10%;
+}
+.latestupdate-wrapper .latestupdate-slider{
+    width: calc(90% - 30px);
+}
+
+.latestupdate-wrapper .title h4{
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 27px;
+}
+.latestupdate-wrapper .title p{
+    font-weight: bold;
+    font-size: 15px;
+}
+.latestupdate-wrapper .latestupdate-carousel .updates{
+    width: 236px;
+    height: 142px;
+    border-radius: 10px;
+    background-image: url('../images/latestcarousel-img.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    padding: 9px 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.latestupdate-carousel .updates .first-para{
+    font-size: 18px;
+    line-height: 18px;
+    width: 108px;
+    font-weight: bold;
+}
+.latestupdate-carousel .updates .second-para{
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: bold;
+}
+.latestupdate-carousel .updates .third-para{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.latestupdate-carousel .updates .first-para,
+.latestupdate-carousel .updates .second-para,
+.latestupdate-carousel .updates .third-para{
+    margin-bottom: 10px;
+}
+.latestupdate-carousel .owl-item{
+    width: fit-content !important;
+}
+/* owl-dots */
+.latestupdate-carousel.owl-theme .owl-nav.disabled+.owl-dots {
+    left: 55px;
+    top: 70px;
+    right: auto;
+}
+.latestupdate-carousel.owl-theme .owl-dots .owl-dot span{
+    border: 1px solid #707070;
+}
+.latestupdate-carousel.owl-theme .owl-dots .owl-dot.active span{
+    background: #222222;
+    border: 1px solid #707070;
+}
+
+/* Complaint content */
+.complaint-wrapper{
+    margin-top: 16px;
+}
+.complaint-wrapper .title{
+    padding: 16px 40px 16px 55px;
+    background-color: #121212;
+    border-top-right-radius: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    position: relative;
+}
+.complaint-wrapper .title::after{
+    content: '';
+    top: 22px;
+    right: -4px;
+    position: absolute;
+    width: 20px;
+    height: 51px;
+    background: #121212;
+    transform: rotate(-8deg);
+}
+.complaint-wrapper .title h3{
+    font-size: 19px;
+    line-height: 19px;
+    font-weight: bold;
+}
+.complaint-wrapper .title a{
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+.complaint-wrapper .title a:hover{
+    color: #fffffff3;
+}
+
+.complaint-wrapper .second-part{
+    height: 12px;
+    flex-grow: 1;
+    background-color: #121212;
+    align-self: flex-end;
+}
+
+.icon-right-arrow::after {
+    content: "\e93b";
+  }
 /* commonly used classes*/
 .comm-para{
     font-size: 15px;
