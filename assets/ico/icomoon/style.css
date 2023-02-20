@@ -1164,3 +1164,20 @@
 .icon-star-empty:before {
   content: "\e9d7";
 }
+
+
+/* Survey call icon */
+.icon-survey_call .path1:before {
+  content: "\e9d4";
+  color: #171717;
+}
+.icon-survey_call .path2:before {
+  content: "\e9d5";
+  color: #97144d;
+  margin-left: -0.9990234375em;
+}
+.icon-survey_call .path3:before {
+  content: "\e9d6";
+  color: #97144d;
+  margin-left: -0.9990234375em;
+}

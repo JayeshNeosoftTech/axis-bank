@@ -218,6 +218,9 @@
 /* Complaint content */
 .complaint-wrapper{
     margin-top: 16px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 .complaint-wrapper .title{
     padding: 16px 40px 16px 55px;
@@ -256,6 +259,111 @@
     flex-grow: 1;
     background-color: #121212;
     align-self: flex-end;
+}
+
+/* Easy Banking and Quick link section */
+.videos-wrapper{
+    padding: 18px 24px;
+    position: relative;
+    z-index: 0;
+    color: #FFFFFF;
+}
+.videos-wrapper::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+.videos-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/videosec-bg.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    z-index: -1;
+}
+.videos-wrapper .videos-sec{
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.videos-wrapper .videos-sec .hashtag-text{
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: bold;
+}
+.videos-wrapper .videos-sec .para{
+    font-size: 16px;
+    line-height: 18px;
+    width: 78%;
+}
+.videos-wrapper .videos-sec .video-title{
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.videos-wrapper .video-wrapper{
+    width: 90%;
+    height: 119px;
+    background: grey;
+}
+.videos-wrapper .video-caption{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.videos-wrapper .videos-sec .viewall-btn{
+    font-size: 14px;
+    line-height: 18px;
+    background: #FFFFFF;
+    padding: 9px 20px;
+    margin: 23px 0 29px;
+}
+
+.quicklinks-sec .title{
+    font-weight: bold;
+    margin: 19px 0 24px;
+}
+.quicklinks-sec__list{
+    list-style: none;
+}
+.quicklinks-sec__list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 23px;
+}
+.quicklinks-sec__list li:last-child{
+    margin-bottom: 0;
+}
+.quicklinks-sec__list li .list-title{
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #FFFFFF;
+}
+.quicklinks-sec__list li span{
+    font-size: 24px;
+}
+
+.reachus-anchor{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 20px;
+}
+.reachus-anchor:hover{
+    color: #FFFFFF;
 }
 
 .icon-right-arrow::after {
