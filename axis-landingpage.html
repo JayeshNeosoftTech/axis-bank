@@ -358,8 +358,8 @@
   <!-- navbar part ends here -->
   <!--main section start-->
   <main class="mb-5">
-    <section class="first-section row m-0">
-        <div class="col-lg-9 pl-0 position-relative">
+    <section class="updateinfo-sec row m-0">
+        <div class="col-lg-9 p-0 position-relative">
             <div class="heading-content">
                 <h2 class="heading text-capitalize mb-2">Axis Bank Support <span>DilSe Open</span></h2>
                 <p class="comm-para mb-0 ">For Quick Assistance, start typing your query here OR select from the list of Insta Services</p>
@@ -509,12 +509,46 @@
     <section class="products-content">
       <div class="row m-0">
         <div class="col-md-3 pl-0">
-          <h2><span>Be a part of </span>Axisbank family</h2>
-          <p>Products to meet your life goals</p>
-          <button class="text-uppercase">Avail Now</button>
+          <div class="info-card">
+            <h2 class="title">Be a part of <b>Axisbank family</b></h2>
+            <p class="desc">Products to meet your life goals</p>
+            <button class="avail-btn text-uppercase">Avail Now</button>
+          </div>
         </div>
         <div class="col-md-9 pr-0">
+          <div class="d-flex align-items-center flex-nowrap w-100 h-100">
+            <div class="products-carousel w-100">
+              <div class="owl-carousel products-carousel__wrapper owl-theme">
+                <div class="slide products-carousel__card">
+                  <div>
+                    <img class="card-icon" src="../axis 2/assets/images/icons/personal-loan.svg" alt="personal"/>
+                    <h4 class="card-title mb-0"><b>Personal Loan</b> for wedding</h4>
+                  </div>
+                </div>
 
+                <div class="slide products-carousel__card">
+                  <div>
+                    <img class="card-icon" src="../axis 2/assets/images/icons/credit-card.svg" alt="credit"/>
+                    <h4 class="card-title mb-0"><b>Credit Card</b> for your needs</h4>
+                  </div>
+                </div>
+
+                <div class="slide products-carousel__card">
+                  <div>
+                    <img class="card-icon" src="../axis 2/assets/images/icons/business-loan.svg" alt="business loan"/>
+                    <h4 class="card-title mb-0"><b>Business Loan</b> just for you</h4>
+                  </div>
+                </div>
+
+                <div class="slide products-carousel__card">
+                  <div>
+                    <img class="card-icon" src="../axis 2/assets/images/icons/auto-loan.svg" alt="auto loan"/>
+                    <h4 class="card-title mb-0"><b>Auto Loan</b> Quickly Available</h4>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1182,12 +1216,11 @@
             smartSpeed:500,
             autoplayHoverPause:true,
         });
-    });
-
-    $(document).ready(function () {
+    
+        /* Latest update carousel */
         $(".owl-carousel.latestupdate-carousel").owlCarousel({
             /* items:1, */
-            margin: 10,
+            margin: 19,
             loop:true,
             nav: false,
             dots: true,
@@ -1198,6 +1231,17 @@
             autoplayHoverPause:true,
             rewind: false,
         });
+
+        /* Products carousel */
+        $(document).ready(function () {
+        $(".owl-carousel.products-carousel__wrapper").owlCarousel({
+            margin: 23,
+            /* loop:true, */
+            nav: true,
+            dots: false,
+            rewind: false,
+        });
+    });
     });
 </script>
 
