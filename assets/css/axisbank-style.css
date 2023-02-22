@@ -312,8 +312,12 @@
 }
 .videos-wrapper .video-wrapper{
     width: 90%;
-    height: 119px;
+    height: 140px;
     background: grey;
+}
+.videos-wrapper .videos-sec .video-wrapper iframe{
+    width: 100%;
+    height: 100%;
 }
 .videos-wrapper .video-caption{
     font-size: 16px;
@@ -575,6 +579,7 @@
     color: #FFFFFF;
     font-weight: bold;
     margin-top: 73px;
+    border: 1px solid #861F41 !important;
 }
 .quickread-wrapper .viewall-btn:hover{
     background: transparent;
@@ -583,9 +588,111 @@
 }
 
 
-.icon-right-arrow::after {
+/* Reach us and complaint section style */
+.reachncomplaint-content .reachus-wrapper{
+    background: transparent linear-gradient(360deg, #FFFFFF 0%, #808080 100%) 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.reachncomplaint-content .reachus-wrapper{
+    padding: 39px 15px 39px 90px;
+}
+.reachncomplaint-content .reachus-wrapper .heading{
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 0;
+}
+/* reach us options style */
+.reachncomplaint-content .reachus-wrapper .reachus-options{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.reachncomplaint-content .reachus-wrapper .reachus-options
+.reachus-options__content{
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 66px #ACA9A929;
+    border: 1px solid #D3CDCD;
+    border-radius: 10px;
+    width: calc(100%/2 - 20px);
+}
+.reachncomplaint-content .reachus-wrapper .reachus-options
+.reachus-options__content .name{
+    margin-bottom: 0;
+    color: #707070;
+}
+.reachncomplaint-content .reachus-wrapper .reachus-options
+.reachus-options__content:hover .name{
+   color: #97144D;
+}
+.reachncomplaint-content .reachus-wrapper .reachus-options
+.reachus-options__content .icon-wrapper{
+    font-size: 42px;
+}
+/* Escalate your Complaint contents style*/
+.reachncomplaint-content .escomplaint-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reachncomplaint-content .escomplaint-wrapper{
+    padding: 39px 15px 39px 15px;
+}
+.reachncomplaint-content .escomplaint-wrapper
+.heading{
+    font-size: 29px;
+    line-height: 35px;
+    width: 90%;
+}
+/* Accordion content style */
+.reachncomplaint-content .escomplaint-wrapper
+.escomplaint-content{
+    width: 90%;
+    margin-top: 40px;
+}
+.reachncomplaint-content .escomplaint-wrapper
+.escomplaint-content .officerinfo-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333333;
+}
+.reachncomplaint-content .escomplaint-wrapper
+.escomplaint-content .officerinfo-title 
+.icon{
+    font-size: 35px;
+}
+.reachncomplaint-content .escomplaint-wrapper
+.escomplaint-content .officerinfo-title 
+.title{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+.reachncomplaint-content .escomplaint-wrapper
+.escomplaint-content .officerinfo-title 
+.icon-right-arrow{
+    font-size: 12px;
+}
+.reachncomplaint-content .escomplaint-wrapper
+.escomplaint-content .collapse{
+    margin-top: 15px;
+}
+.reachncomplaint-content .escomplaint-wrapper
+.escomplaint-content .officerinfo-body{
+    padding: 10px;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+
+/* .icon-right-arrow::after {
     content: "\e93b";
-  }
+  } */
 /* commonly used classes*/
 .comm-para{
     font-size: 15px;
