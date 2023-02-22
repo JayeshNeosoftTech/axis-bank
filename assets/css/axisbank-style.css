@@ -693,6 +693,74 @@
     border-radius: 10px;
 }
 
+/* Additional information style */
+.additionalinfo .heading-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+}
+.additionalinfo .heading-wrapper .heading{
+    margin-bottom: 27px;
+}
+.additionalinfo .heading-wrapper .heading{
+    margin-bottom: 27px;
+}
+.additionalinfo .heading-wrapper .viewall-btn{
+    padding: 12px 22px;
+    background: #861F41;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 1px solid #861F41 !important;
+}
+.additionalinfo .heading-wrapper .viewall-btn:hover{
+    background: transparent;
+    border: 1px solid #861F41 !important;
+    color: #861F41;
+}
+
+.additionalinfo .additionalinfo-card__wrapper{
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.additionalinfo .additionalinfo-card__wrapper
+.additionalinfo-card__content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.additionalinfo .additionalinfo-card__wrapper
+.additionalinfo-card__content .additionalinfo-card{
+    width: calc(100%/4 - 20px);
+    padding: 13px;
+    background: #FFFFFF;
+    border: 1px solid #707070;
+    border-radius: 10px;
+}
+.additionalinfo .additionalinfo-card__wrapper
+.additionalinfo-card__content 
+.additionalinfo-card .bank-icon{
+   font-size: 45px;
+}
+.additionalinfo .additionalinfo-card__wrapper
+.additionalinfo-card__content 
+.additionalinfo-card .title{
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    color: #707070;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.additionalinfo .additionalinfo-card__wrapper
+.additionalinfo-card__content 
+.additionalinfo-card:hover .title{
+    color: #97144D;
+}
 
 /* .icon-right-arrow::after {
     content: "\e93b";
