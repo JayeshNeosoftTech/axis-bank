@@ -594,10 +594,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 39px 15px 39px 30px;
 }
-.reachncomplaint-content .reachus-wrapper{
-    padding: 39px 15px 39px 90px;
-}
+
 .reachncomplaint-content .reachus-wrapper .heading{
     font-size: 26px;
     line-height: 32px;
@@ -608,6 +608,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+.reachncomplaint-content .reachus-wrapper
+.row.w-90{
+    width: 90%;
 }
 .reachncomplaint-content .reachus-wrapper .reachus-options
 .reachus-options__content{
