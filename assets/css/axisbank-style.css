@@ -35,6 +35,7 @@
     box-shadow: 0px 3px 56px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
     margin: 25px auto 0;
+    position: relative;
 }
 .searchbar .profile-wrapper{
     width: 45px;
@@ -61,6 +62,106 @@
  .searchbar .inputfield-btn .icon-send-icon{
     margin-left: 25px;
  }
+ /* Searchbar style end */
+
+/* Searchbar popup style start */
+.searchbar .searchbar-modal{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    display: none;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 3px 26px rgba(0, 0, 0, 0.16);
+    z-index: 3;
+}
+.searchbar .searchbar-modal .searchbar-modal__inputfield{
+    width: 100%;
+    padding: 21px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchbar .searchbar-modal .searchbar-modal__inputfield
+input[type='text']{
+    flex-grow: 1;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 500;
+    caret-color: #861F41;
+}
+.searchbar .searchbar-modal .searchbar-modal__inputfield .inputfield-btn
+.icon-mice-icon{
+    font-size: 26px;
+    cursor: pointer;
+}
+.searchbar .searchbar-modal .searchbar-modal__inputfield
+.inputfield-btn .icon-close{
+    margin-left: 30px;
+    font-size: 18px;
+    color: #861F41;
+    font-weight: bold;
+}
+/* FQA tab style start */
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper{
+    padding: 0 21px;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .faq-tab{
+    border-bottom: 1px solid #707070;
+    padding: 0 20px;
+    gap: 6%;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .faq-tab .nav-link{
+    color: #861F41;
+    font-size: 14px;
+    line-height: 17px;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .faq-tab .nav-link.active{
+    color: #861F41;
+    border-bottom: 2px solid #861F41;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .faq-tab .nav-link .count{
+    font-size: 12px;
+    background: #DEDEDE;
+    border-radius: 3px;
+    padding: 2px 8px;
+    color: #313131;
+    margin-left: 5px;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .tab-content .popular-tab__pane .popular-tab__pane-list{
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 25px;
+    gap: 12px;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .tab-content .popular-tab__pane 
+.popular-tab__pane-list a{
+    font-size: 14px;
+    line-height: 17px;
+    color: #525252;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .tab-content .popular-tab__pane 
+.popular-tab__pane-list a:hover{
+    color: #333333;
+}
+
+/* FQA tab style end */
+
+
+/* Searchbar popup style end */
+
+
 /* heading-content style end */
 
 /* seletion option slider styel start */
