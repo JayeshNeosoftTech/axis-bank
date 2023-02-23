@@ -329,6 +329,13 @@ input[type='text']{
     width: 100%;
     z-index: 1;
  }
+ .owl-carousel.selectionopt-carousel .owl-item{
+    width: fit-content !important;
+ }
+ .selectionopt-slider .selectionopt-carousel
+ .slide{
+    width: fit-content;
+ }
  .selectionopt-slider .selectionopt-carousel
  .slide a{
     position: relative;

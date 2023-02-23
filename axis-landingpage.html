@@ -40,8 +40,6 @@
         </div>
       </div>
     </div>
-    <a href="https://ai.axisbank.co.in/morfeuswebsdk/" target="_blank" class="axis_aha"><img
-        src="./assets/images/axis-aha2.png" alt="Axis Bot"></a>
   </header>
   <!--header section start-->
   <!-- navbar part start here -->
@@ -369,15 +367,17 @@
                         <img src="./assets/images/profile-pic.svg" alt="pic"/>
                     </div>
                     <p class="input-data mb-0 searchbar-close" id="searchbar">How may I help you</p>
-                    <button class="inputfield-btn"><span class="icon-mice-icon"></span></button>
+                    <button class="inputfield-btn">
+                      <span class="searchVoice icon-mice-icon" id="searchVoice"></span>
+                    </button>
                     <button class="inputfield-btn"><span class="icon-send-icon"></span></button>
 
                     <!-- Search bar popup modal -->
                     <div class="searchbar-modal" id="searchbar-popup">
                       <div class="searchbar-modal__inputfield">
-                        <input type="text" name="search" id="" placeholder="Get your answers easily"/>
-                        <div>
-                          <button class="inputfield-btn"><span class="icon-mice-icon"></span></button>
+                        <input type="text" id="result" class="result" name="result" value="" placeholder="Get your answers easily" autocomplete="off"/>
+                        <div class="d-flex align-items-center">
+                          <button class="inputfield-btn"><span class="searchVoice icon-mice-icon" id="searchVoice"></span></button>
                           <button class="inputfield-btn"><span class="icon-close" id="searchclose-btn"></span></button>
                         </div>
                       </div>
@@ -1628,10 +1628,12 @@
 <script>
     $(document).ready(function () {
         $(".owl-carousel.selectionopt-carousel").owlCarousel({
-            loop:true,
+            items: 5,
+            margin: 20,
             nav:true,
             navText:['<img class="prev-arrow" src="./assets/images/icons/left-arow.svg" alt="left">', '<img class="next-arrow" src="./assets/images/icons/left-arow.svg" alt="left">'],
             dots:false,
+            loop:true,
             autoplay:true,
             autoplaySpeed:500,
             smartSpeed:500,
