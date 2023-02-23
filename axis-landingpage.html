@@ -424,18 +424,20 @@
                             <!-- tab content end -->
     
                             <div class="insta-query">
-                              <p class="title">Do you want to raise an Insta Query?</p>
-                              <a href="#" class="nav-link">Block Card</a>
-                              <a href="#" class="nav-link">Chequebook request</a>
-                              <a href="#" class="nav-link">Loan Services</a>
-                              <a href="#" class="nav-link">Downloads</a>
-                              <a href="#" class="nav-link">Fraudulent Transaction</a>
-                              <a href="#" class="nav-link">Other Requests</a>
+                              <p class="title">Do you want to raise an <span>Insta Query?</span></p>
+                              <div class="insta-query__list d-flex flex-wrap">
+                                <a href="#" class="nav-link">Block Card</a>
+                                <a href="#" class="nav-link">Chequebook request</a>
+                                <a href="#" class="nav-link">Loan Services</a>
+                                <a href="#" class="nav-link">Downloads</a>
+                                <a href="#" class="nav-link">Fraudulent Transaction</a>
+                                <a href="#" class="nav-link">Other Requests</a>
+                              </div>
                             </div>
     
                             <div class="videos-content">
-                              <h5>Videos</h5>
-                              <div class="videos-wrapper">
+                              <h5 class="title">Videos</h5>
+                              <div class="videos-content__wrapper">
                                 <div class="video">
                                   <div class="video-tab">
     
@@ -1665,10 +1667,10 @@
             nav: false,
             dots: true,
             dotsEach: 1,
-            /* autoplay:true,
-            autoplaySpeed:500,
-            smartSpeed:500,
-            autoplayHoverPause:true, */
+            autoplay:true,
+            autoplaySpeed: 400,
+            smartSpeed: 400,
+            autoplayHoverPause:true,
             rewind: false,
         });
   });

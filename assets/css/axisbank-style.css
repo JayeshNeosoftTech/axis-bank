@@ -107,6 +107,7 @@ input[type='text']{
 .searchbar-modal .searchbar-modal__content
 .faq-tab__wrapper{
     padding: 0 21px;
+    padding-bottom: 50px;
 }
 .searchbar-modal .searchbar-modal__content
 .faq-tab__wrapper .faq-tab{
@@ -135,7 +136,7 @@ input[type='text']{
     margin-left: 5px;
 }
 .searchbar-modal .searchbar-modal__content
-.faq-tab__wrapper .tab-content .popular-tab__pane .popular-tab__pane-list{
+.faq-tab__wrapper .tab-content .popular-tab__pane.fade.show.active .popular-tab__pane-list{
     list-style-type: disc;
     display: flex;
     flex-direction: column;
@@ -155,13 +156,151 @@ input[type='text']{
 .popular-tab__pane-list a:hover{
     color: #333333;
 }
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .tab-content .popular-tab__pane.fade 
+.popular-tab__pane-list{
+    display: none;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .tab-content .tab-pane h3{
+    height: 126px;
+}
 
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .insta-query{
+    padding: 0 22px;
+    margin: 40px 0;
+    text-align: start;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .insta-query .title{
+    font-size: 18px;
+    line-height: 22px;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .insta-query .title span{
+    color: #931344;
+}
+
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .insta-query 
+.insta-query__list{
+    gap: 12px 0;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .insta-query 
+.insta-query__list .nav-link{
+    font-size: 14px;
+    line-height: 17px;
+    color: #525252;
+    padding: 0;
+    width: calc(100%/3 - 12px);
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .insta-query 
+.insta-query__list .nav-link:hover{
+    color: #333333;
+}
+
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .videos-content{
+    padding: 26px 22px;
+    border-top: 2px dashed #000000;
+    text-align: start;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .videos-content .title{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #575757;
+    margin-bottom: 15px;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .videos-content .videos-content__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .videos-content .videos-content__wrapper
+.video{
+    width: 187px;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .videos-content .videos-content__wrapper
+.video .video-tab{
+    width: 100%;
+    height: 122px;
+    border: 1px solid #707070;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .videos-content .videos-content__wrapper
+.video .video-title{
+    font-size: 14px;
+    line-height: 17px;
+    color: #525252;
+    margin: 12px 0 0;
+}
 /* FQA tab style end */
 
+/* searchbar modal banner style start */
+.searchbar-modal .searchbar-modal__content
+.searchbar-modal__banner{
+    padding: 25px 15px 50px;
+    background: #F7F7F7;
+}
+.searchbar-modal .searchbar-modal__content
+.searchbar-modal__banner .banner-wrapper{
+    padding: 25px 0 25px;
+    position: relative;
+}
+.searchbar-modal .searchbar-modal__content
+.searchbar-modal__banner .banner-wrapper
+.owl-carousel.banner-carousel{
+    width: 100%;
+    height: fit-content;
+}
+.searchbar-modal .searchbar-modal__content
+.searchbar-modal__banner .banner-wrapper
+.owl-carousel.banner-carousel .banner-carousel__content{
+    max-width: 225px;
+    max-height: 225px;
+    height: 225px;
+    background: #E2E2E2;
+    padding: 30px 20px;
+}
+
+.searchbar-modal .searchbar-modal__content
+.searchbar-modal__banner .banner-wrapper
+.owl-carousel.banner-carousel.owl-theme .owl-dots{
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.searchbar-modal .searchbar-modal__content
+.searchbar-modal__banner .banner-wrapper
+.owl-carousel.banner-carousel.owl-theme .owl-dots .owl-dot span
+{
+    width: 6px ;
+    height: 6px;
+    margin: 5px 3px;
+    border: 1px solid #707070;
+    background: transparent;
+}
+.searchbar-modal .searchbar-modal__content
+.searchbar-modal__banner .banner-wrapper
+.owl-carousel.banner-carousel.owl-theme .owl-dots .owl-dot.active span, 
+.searchbar-modal .searchbar-modal__content
+.searchbar-modal__banner .banner-wrapper
+.owl-carousel.banner-carousel.owl-theme .owl-dots .owl-dot:hover span{
+    background: #707070;
+}
+/* searchbar modal banner style end */
 
 /* Searchbar popup style end */
-
-
 /* heading-content style end */
 
 /* seletion option slider styel start */
