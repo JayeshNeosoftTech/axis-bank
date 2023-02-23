@@ -270,6 +270,8 @@ input[type='text']{
 .owl-carousel.banner-carousel{
     width: 100%;
     height: fit-content;
+    max-width: 225px;
+    margin: 0 auto;
 }
 .searchbar-modal .searchbar-modal__content
 .searchbar-modal__banner .banner-wrapper
