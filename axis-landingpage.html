@@ -378,7 +378,7 @@
                         <input type="text" name="search" id="" placeholder="Get your answers easily"/>
                         <div>
                           <button class="inputfield-btn"><span class="icon-mice-icon"></span></button>
-                          <button class="inputfield-btn"><span class="icon-close"></span></button>
+                          <button class="inputfield-btn"><span class="icon-close" id="searchclose-btn"></span></button>
                         </div>
                       </div>
                       <div class="searchbar-modal__content">
@@ -1676,8 +1676,9 @@
   });
 
   /* searchbar popup code */
-  searchbar= document.getElementById('searchbar');
-  searchbar_modal= document.getElementById('searchbar-popup');
+  searchbar= document.getElementById('searchbar');  //main search bar
+  searchbar_modal= document.getElementById('searchbar-popup');  //popup searchbar
+
   searchbar.addEventListener('click', function(){
     if(searchbar.classList.contains('searchbar-close')){
       searchbar.classList.remove('searchbar-close');
@@ -1685,6 +1686,14 @@
       searchbar_modal.style.display= 'block';
     }
     else{
+      searchbar.classList.remove('searchbar-open');
+      searchbar.classList.add('searchbar-close');
+      searchbar_modal.style.display= 'none';
+    }
+  });
+
+  document.getElementById('searchclose-btn').addEventListener('click', function(){
+    if(searchbar.classList.contains('searchbar-open')){
       searchbar.classList.remove('searchbar-open');
       searchbar.classList.add('searchbar-close');
       searchbar_modal.style.display= 'none';
