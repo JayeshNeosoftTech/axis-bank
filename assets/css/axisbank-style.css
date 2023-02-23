@@ -106,7 +106,7 @@ input[type='text']{
 /* FQA tab style start */
 .searchbar-modal .searchbar-modal__content
 .faq-tab__wrapper{
-    padding: 0 21px;
+    padding: 0 0 0 21px;
     padding-bottom: 50px;
 }
 .searchbar-modal .searchbar-modal__content
@@ -134,6 +134,10 @@ input[type='text']{
     padding: 2px 8px;
     color: #313131;
     margin-left: 5px;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .tab-content{
+    padding-right: 21px;
 }
 .searchbar-modal .searchbar-modal__content
 .faq-tab__wrapper .tab-content .popular-tab__pane.fade.show.active .popular-tab__pane-list{
@@ -207,6 +211,7 @@ input[type='text']{
     padding: 26px 22px;
     border-top: 2px dashed #000000;
     text-align: start;
+    margin-right: 21px;
 }
 .searchbar-modal .searchbar-modal__content
 .faq-tab__wrapper .videos-content .title{
@@ -247,8 +252,13 @@ input[type='text']{
 /* searchbar modal banner style start */
 .searchbar-modal .searchbar-modal__content
 .searchbar-modal__banner{
-    padding: 25px 15px 50px;
+    padding: 34px 0 0;
+}
+.searchbar-modal .searchbar-modal__content
+.searchbar-modal__banner .banner{
+    padding: 0 15px 50px;
     background: #F7F7F7;
+    height: 100%;
 }
 .searchbar-modal .searchbar-modal__content
 .searchbar-modal__banner .banner-wrapper{
