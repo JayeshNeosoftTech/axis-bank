@@ -872,6 +872,10 @@ input[type='text']{
     background: #FFFFFF;
 }
 .downloadarticle-content .download-content 
+.card-wrapper .cards a{
+    width: 100%;
+}
+.downloadarticle-content .download-content 
 .card-wrapper .cards:hover{
     cursor: pointer;
     border: none;
@@ -888,6 +892,10 @@ input[type='text']{
     /* width: 45px; */
     margin: 0 auto;
     font-size: 40px;
+}
+.downloadarticle-content .download-content 
+.card-wrapper .cards .icon-nri.card-icons{
+    color: #121212;
 }
 .downloadarticle-content .download-content 
 .card-wrapper .cards .title{
@@ -1141,6 +1149,7 @@ input[type='text']{
     gap: 20px;
     max-height: 265px;
     overflow: hidden;
+    padding-left: 10px;
 }
 
 /* custom scroll bar style */
