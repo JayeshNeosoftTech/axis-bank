@@ -268,11 +268,22 @@ input[type='text']{
 }
 .searchbar-modal .searchbar-modal__content
 .faq-tab__wrapper .videos-content .videos-content__wrapper
+.video .video-tab iframe{
+    width: 100%;
+    height: 100%;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .videos-content .videos-content__wrapper
 .video .video-title{
     font-size: 14px;
     line-height: 17px;
     color: #525252;
     margin: 12px 0 0;
+}
+.searchbar-modal .searchbar-modal__content
+.faq-tab__wrapper .videos-content .videos-content__wrapper
+.video .video-title:hover{
+    color: #96194D;
 }
 /* FQA tab style end */
 
@@ -1128,7 +1139,35 @@ input[type='text']{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    max-height: 265px;
+    overflow: hidden;
 }
+
+/* custom scroll bar style */
+.additionalinfo .additionalinfo-card__wrapper
+.additionalinfo-card__content::-webkit-scrollbar {
+    width: 4px;
+}
+/* Track */
+.additionalinfo .additionalinfo-card__wrapper
+.additionalinfo-card__content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(181, 181, 181, 0.8); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.additionalinfo .additionalinfo-card__wrapper
+.additionalinfo-card__content::-webkit-scrollbar-thumb {
+  background: #861F41; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.additionalinfo .additionalinfo-card__wrapper
+.additionalinfo-card__content::-webkit-scrollbar-thumb:hover {
+  background: #861F41; 
+}
+
 .additionalinfo .additionalinfo-card__wrapper
 .additionalinfo-card__content .additionalinfo-card{
     width: calc(100%/4 - 20px);
@@ -1151,6 +1190,7 @@ input[type='text']{
     color: #707070;
     margin-left: 10px;
     margin-bottom: 0;
+    text-transform: capitalize;
 }
 .additionalinfo .additionalinfo-card__wrapper
 .additionalinfo-card__content 
