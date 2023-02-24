@@ -581,44 +581,25 @@
             <p class="para">What our latest videos & solve your queries seconds</p>
             <p class="video-title text-uppercase">New Video</p>
             <div class="video-wrapper">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/Q86txrxs1nU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="
-                  width: 100%;
-                  height: 100%;
-                  z-index: 1;
-              "></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Q86txrxs1nU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
             </div>
-            <p class="video-caption">How to download my Credit Card Statement?</p>
-            <button class="viewall-btn text-capitalize">View All</button>
+            <a href="#" class="video-caption">How to download my Credit Card Statement?</a>
+            <a href="#" class="viewall-btn text-capitalize">View All</a>
           </div>
           <div class="quicklinks-sec">
             <h5 class="title text-capitalize">Quick Links</h5>
             <ul class="quicklinks-sec__list">
               <li>
                 <a href="#" class="list-title">Chat With Us</a>
-                <span class="icon-survey_chat">
-                  <span class="path1"></span>
-                  <span class="path2"></span>
-                  <span class="path3"></span>
-                  <span class="path4"></span>
-                </span>
+                <span class="icon-chatus icons"></span>
               </li>
               <li>
                 <a href="#" class="list-title">Call Us</a>
-                <span class="icon-survey_call">
-                  <span class="path1">
-                  </span>
-                  <span class="path2"></span>
-                  <span class="path3"></span>
-                </span>
+                <span class="icon-callus icons"></span>
               </li>
               <li>
                 <a href="#" class="list-title">Raise A Fraudulant Transaction</a>
-                <span class="icon-survey_call">
-                  <span class="path1">
-                  </span>
-                  <span class="path2"></span>
-                  <span class="path3"></span>
-                </span>
+                <span class="icon-Fraudtransaction icons"></span>
               </li>
             </ul>
           </div>
@@ -1611,6 +1592,8 @@
     </div>
   </div>
 
+  <!-- Overlay for searchbar -->
+  <div class="overlay-searchbar" id="overlay-searchbar"></div>
 
   <!--container end-->
   <script src="./assets/css/jquery.js"></script>
@@ -1634,10 +1617,12 @@
             navText:['<img class="prev-arrow" src="./assets/images/icons/left-arow.svg" alt="left">', '<img class="next-arrow" src="./assets/images/icons/left-arow.svg" alt="left">'],
             dots:false,
             loop:true,
+            infinite: true,
             autoplay:true,
-            autoplaySpeed:500,
+            autoplaySpeed: 500,
             smartSpeed:500,
             autoplayHoverPause:true,
+            rewind: true,
         });
     
         /* Latest update carousel */
@@ -1682,25 +1667,30 @@
   /* searchbar popup code */
   searchbar= document.getElementById('searchbar');  //main search bar
   searchbar_modal= document.getElementById('searchbar-popup');  //popup searchbar
+  overlay =document.getElementById('overlay-searchbar'); //overlay
 
   searchbar.addEventListener('click', function(){
     if(searchbar.classList.contains('searchbar-close')){
       searchbar.classList.remove('searchbar-close');
       searchbar.classList.add('searchbar-open');
       searchbar_modal.style.display= 'block';
+      overlay.style.display= 'block';
     }
     else{
       searchbar.classList.remove('searchbar-open');
       searchbar.classList.add('searchbar-close');
       searchbar_modal.style.display= 'none';
+      overlay.style.display= 'none';
     }
   });
 
+  /* Close button of searchbar popup */
   document.getElementById('searchclose-btn').addEventListener('click', function(){
     if(searchbar.classList.contains('searchbar-open')){
       searchbar.classList.remove('searchbar-open');
       searchbar.classList.add('searchbar-close');
       searchbar_modal.style.display= 'none';
+      overlay.style.display= 'none';
     }
   });
 
