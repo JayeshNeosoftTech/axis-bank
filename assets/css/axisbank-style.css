@@ -1,3 +1,17 @@
+/* Lato light font */
+@font-face {
+    font-family: 'Lato';
+    src: url('../css/cssfonts/Lato/Lato-Light.eot');
+    src: url('../css/cssfonts/Lato/Lato-Light.eot?#iefix') format('embedded-opentype'),
+        url('../css/cssfonts/Lato/Lato-Light.woff2') format('woff2'),
+        url('../css/cssfonts/Lato/Lato-Light.woff') format('woff'),
+        url('../css/cssfonts/Lato/Lato-Light.ttf') format('truetype'),
+        url('../css/cssfonts/Lato/Lato-Light.svg#Lato-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 /* first section style */
 
@@ -826,6 +840,12 @@ input[type='text']{
 .downloadarticle-content .download-content{
     padding: 55px 65px;
 }
+.downloadarticle-content .download-content .title{
+    font-family: 'Lato-Regular';
+}
+.downloadarticle-content .download-content .title b{
+    font-family: 'Lato-Bold';
+}
 .downloadarticle-content .download-content .card-wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -854,8 +874,9 @@ input[type='text']{
 }
 .downloadarticle-content .download-content 
 .card-wrapper .cards .card-icons{
-    width: 45px;
+    /* width: 45px; */
     margin: 0 auto;
+    font-size: 40px;
 }
 .downloadarticle-content .download-content 
 .card-wrapper .cards .title{
@@ -888,26 +909,36 @@ input[type='text']{
 .quickread-wrapper .article-wrapper .article-content{
     width: 235px;
     height: auto;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+.quickread-wrapper .article-wrapper .article-content:hover{
+    box-shadow: 5px 10px 15px 5px #00000029;
 }
 .quickread-wrapper .article-wrapper 
 .article-content .banner-img{
     width: 235px;
 }
 .quickread-wrapper .heading{
-    font-weight: 400;
+    font-family: 'Lato';
     margin-bottom: 35px;
+    color: #000000;
+}
+.quickread-wrapper .heading b{
+    font-family: 'lato-bold';
 }
 .quickread-wrapper .article-wrapper 
 .article-content .para{
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 16px;
+    line-height: 19px;
     font-weight: 500;
     margin: 9px 0 15px;
+    color: rgba(0, 0, 0, 0.8);
 }
 .quickread-wrapper .article-wrapper 
 .article-content .readmore-link{
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 16px;
+    line-height: 19px;
     font-weight: bold;
     color: #000000;
 }
@@ -919,20 +950,23 @@ input[type='text']{
     padding: 12px 22px;
     background: #861F41;
     color: #FFFFFF;
-    font-weight: bold;
-    margin-top: 73px;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Lato-Bold';
+    margin-top: 53px;
     border: 1px solid #861F41 !important;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 .quickread-wrapper .viewall-btn:hover{
-    background: transparent;
-    border: 1px solid #861F41 !important;
-    color: #861F41;
+    margin-top: 52px;
+    box-shadow: 10px 10px 10px #00000040;
 }
 
 
 /* Reach us and complaint section style */
 .reachncomplaint-content .reachus-wrapper{
-    background: transparent linear-gradient(360deg, #FFFFFF 0%, #808080 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(360deg, #FFFFFF 0%, #8080801a 100%) 0% 0% no-repeat padding-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -965,6 +999,11 @@ input[type='text']{
     width: calc(100%/2 - 20px);
 }
 .reachncomplaint-content .reachus-wrapper .reachus-options
+.reachus-options__content:hover{
+    border: none;
+    box-shadow: 0 3px 18px #00000029;
+}
+.reachncomplaint-content .reachus-wrapper .reachus-options
 .reachus-options__content .name{
     margin-bottom: 0;
     color: #707070;
@@ -992,6 +1031,10 @@ input[type='text']{
     font-size: 29px;
     line-height: 35px;
     width: 90%;
+    color: #171717;
+}
+.reachncomplaint-content .escomplaint-wrapper .heading b{
+    font-family: 'Lato-Bold';
 }
 /* Accordion content style */
 .reachncomplaint-content .escomplaint-wrapper
@@ -1018,11 +1061,18 @@ input[type='text']{
     line-height: 22px;
     margin-bottom: 0;
     margin-left: 20px;
+    color: #333333;
+}
+.reachncomplaint-content .escomplaint-wrapper
+.escomplaint-content .officerinfo-title 
+.title b{
+    font-family: 'Lato-Bold';
 }
 .reachncomplaint-content .escomplaint-wrapper
 .escomplaint-content .officerinfo-title 
 .icon-right-arrow{
     font-size: 12px;
+    margin-right: 10%;
 }
 .reachncomplaint-content .escomplaint-wrapper
 .escomplaint-content .collapse{
@@ -1048,6 +1098,10 @@ input[type='text']{
 }
 .additionalinfo .heading-wrapper .heading{
     margin-bottom: 27px;
+    font-weight: normal;
+}
+.additionalinfo .heading-wrapper .heading b{
+    font-family: 'Lato-Bold';
 }
 .additionalinfo .heading-wrapper .viewall-btn{
     padding: 12px 22px;
@@ -1055,11 +1109,11 @@ input[type='text']{
     color: #FFFFFF;
     font-weight: bold;
     border: 1px solid #861F41 !important;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 .additionalinfo .heading-wrapper .viewall-btn:hover{
-    background: transparent;
-    border: 1px solid #861F41 !important;
-    color: #861F41;
+    box-shadow: 10px 10px 10px #00000040;
 }
 
 .additionalinfo .additionalinfo-card__wrapper{
@@ -1097,6 +1151,12 @@ input[type='text']{
     color: #707070;
     margin-left: 10px;
     margin-bottom: 0;
+}
+.additionalinfo .additionalinfo-card__wrapper
+.additionalinfo-card__content 
+.additionalinfo-card:hover{
+    border: none;
+    box-shadow: 0 3px 18px #00000029;
 }
 .additionalinfo .additionalinfo-card__wrapper
 .additionalinfo-card__content 
