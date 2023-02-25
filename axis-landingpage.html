@@ -900,7 +900,7 @@
         <div class="col-lg-3 heading-wrapper">
           <div class="">
             <h3 class="heading"><b class="d-block">Additional</b> Information</h3>
-            <button class="viewall-btn text-uppercase" id="addInfo-viewAll_Btn">View all</button>
+            <button class="viewall-btn text-uppercase viewall-btn__desktop" id="addInfo-viewAll_Btn">View all</button>
           </div>
         </div>
 
@@ -1081,6 +1081,9 @@
               </a>
             </div>
           </div>
+
+          <!-- View all button in mobile view -->
+          <button class="viewall-btn text-uppercase viewall-btn__mobile" id="addInfo-viewAll_BtnMobile">View all</button>
         </div>
       </div>
     </section>
@@ -1838,6 +1841,10 @@
   addInfo_cardWrapper= document.getElementById('additionalinfo-card__content');
 
   document.getElementById('addInfo-viewAll_Btn').addEventListener('click', function(){
+    addInfo_cardWrapper.style.overflowY= 'auto';
+    addInfo_cardWrapper.style.paddingBottom= '10px';
+  });
+  document.getElementById('addInfo-viewAll_BtnMobile').addEventListener('click', function(){
     addInfo_cardWrapper.style.overflowY= 'auto';
     addInfo_cardWrapper.style.paddingBottom= '10px';
   });
