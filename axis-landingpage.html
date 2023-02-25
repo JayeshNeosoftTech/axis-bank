@@ -357,7 +357,7 @@
   <!--main section start-->
   <main class="mb-5">
     <section class="updateinfo-sec row m-0">
-        <div class="col-lg-9 p-0 position-relative">
+        <div class="col-md-9 p-0 position-relative updateinfo-secCol">
             <div class="heading-content">
                 <h2 class="heading text-capitalize mb-2">Axis Bank Support <span>DilSe Open</span></h2>
                 <p class="comm-para mb-0 ">For Quick Assistance, start typing your query here OR select from the list of Insta Services</p>
@@ -575,7 +575,7 @@
               <div class="second-part"></div>
             </div>
         </div>
-        <div class="col-lg-3 videos-wrapper">
+        <div class="col-md-3 videos-wrapper">
           <div class="videos-sec">
             <p class="hashtag-text text-uppercase mb-2">#EasyBanking</p>
             <p class="para">What our latest videos & solve your queries seconds</p>
@@ -1737,17 +1737,21 @@
     
         /* Latest update carousel */
         $(".owl-carousel.latestupdate-carousel").owlCarousel({
-            /* items:1, */
             margin: 19,
             loop:true,
             nav: false,
-            dots: true,
+            dots: false,
             dotsEach: 1,
             autoplay:true,
             autoplaySpeed:500,
             smartSpeed:500,
             autoplayHoverPause:true,
             rewind: false,
+            responsive:{
+              768:{
+                dots: true
+              }
+            }
         });
 
         /* Products carousel */

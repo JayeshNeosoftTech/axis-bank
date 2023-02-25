@@ -449,6 +449,7 @@ input[type='text']{
 }
 .latestupdate-wrapper .latestupdate-slider{
     width: calc(90% - 30px);
+    height: 142px;
 }
 
 .latestupdate-wrapper .title h4{
@@ -519,7 +520,7 @@ input[type='text']{
 
 /* Complaint content */
 .complaint-wrapper{
-    margin-top: 65px;
+    margin-top: 80px;
     position: sticky;
     width: 100%;
     bottom: 0;
@@ -585,13 +586,13 @@ input[type='text']{
 .videos-wrapper::after {
     content: '';
     position: absolute;
-    top: 62px;
+    top: 65px;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: url(../images/videosec-bg1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: bottom center;
     z-index: -1;
 }
 .videos-wrapper .videos-sec{
@@ -633,6 +634,7 @@ input[type='text']{
     margin-top: 9px;
     color: rgba(255, 255, 255, 0.85);
     margin-bottom: 15px;
+    width: 250px;
 }
 .videos-wrapper .video-caption:hover{
     color: rgba(255, 255, 255, 1);
@@ -1229,4 +1231,132 @@ input[type='text']{
     font-size: 15px;
     line-height: 18px;
     color: rgba(51, 51, 51, 0.8);
+}
+
+/* Media query */
+@media screen and (max-width: 1280px){
+    .searchbar-modal .searchbar-modal__content .faq-tab__wrapper .insta-query 
+    .insta-query__list .nav-link{
+        width: calc(100%/2 - 12px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .owl-carousel.latestupdate-carousel .owl-stage-outer{
+        height: 142px;
+    }
+    .owl-carousel.latestupdate-carousel .owl-stage-outer .owl-stage{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .searchbar-modal .searchbar-modal__content 
+    .searchbar-modal__banner{
+        padding-top: 0;
+    }
+    .owl-carousel.selectionopt-carousel,
+    .owl-carousel.selectionopt-carousel .owl-stage-outer,
+    .owl-carousel.selectionopt-carousel .owl-stage-outer .owl-stage{
+        height: 25px;
+    }
+    .complaint-wrapper{
+        margin-top: 105px;
+    }
+    .videos-wrapper{
+        padding-bottom: 20px;
+    }
+    .videos-wrapper .videos-sec .para{
+        width: 100%;
+    }
+    .videos-wrapper .video-caption{
+        width: fit-content;
+    }
+    .reachus-anchor{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .updateinfo-secCol{
+        display: flex;
+        flex-direction: column;
+    }
+    .complaint-wrapper{
+        display: none !important;
+    }
+    .updateinfo-sec .heading-content{
+        order: 3;
+    }
+    .updateinfo-sec .selectionopt-slider{
+        order: 1;
+        margin: 0 auto;
+        padding: 20px 15px;
+        background: #F0F0F0;
+    }
+    .owl-carousel.selectionopt-carousel .owl-nav{
+        top: 21px;
+        align-items: center;
+    }
+    .owl-carousel.selectionopt-carousel .owl-nav button.owl-next img{
+        margin-top: -10px;
+    }
+
+    .latestupdate-wrapper{
+        order: 2;
+        margin: 0;
+        padding: 32px 15px;
+        flex-direction: column;
+    }
+    .latestupdate-wrapper .title{
+        width: 100%;
+        display: flex;
+        gap: 6px;
+    }
+    .latestupdate-wrapper .title h4,
+    .latestupdate-wrapper .title p{
+        font-size: 16px;
+        line-height: 19px;
+        font-family: 'Lato-Bold';
+        margin-bottom: 0;
+    }
+    .latestupdate-wrapper .latestupdate-slider{
+        width: 100%;
+    }
+    .latestupdate-wrapper::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background: #F0F0F0;
+        z-index: -1;
+    }
+
+    .updateinfo-sec .heading-content{
+        padding-top: 10px;
+    }
+    .updateinfo-sec .heading-content::before{
+        height: 80%;
+    }
+
+    .videos-wrapper .videos-sec .hashtag-text{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .videos-wrapper .videos-sec .para,
+    .videos-wrapper .video-caption{
+        font-size: 16px;
+        line-height: 19px;
+        font-family: 'Lato-Bold';
+    }
+    .videos-wrapper .video-wrapper{
+        width: 350px;
+        height: 200px;
+    }
+    .videos-wrapper .videos-sec .viewall-btn{
+        display: block;
+        width: fit-content;
+    }
 }
