@@ -932,7 +932,7 @@ input[type='text']{
 }
 .quickread-wrapper .article-wrapper{
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 22px;
     width: fit-content;
 }
@@ -1300,6 +1300,9 @@ input[type='text']{
     .insta-query__list .nav-link{
         width: calc(100%/2 - 12px);
     }
+    .downloadarticle-content .download-content{
+        padding: 55px 25px;
+    }
 }
 
 @media screen and (max-width: 1199px){
@@ -1406,6 +1409,25 @@ input[type='text']{
     }
     .products-carousel__wrapper.owl-theme .owl-nav{
         display: none;
+    }
+
+    .downloadarticle-content .download-content .title{
+        text-align: center;
+    }
+    .downloadarticle-content .download-content .card-wrapper{
+        justify-content: center;
+    }
+
+    .quickread-wrapper{
+        padding-top: 70px;
+    }
+    .quickread-wrapper .quickread-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .quickread-wrapper .article-wrapper{
+        width: 500px;
     }
 }
 
@@ -1539,6 +1561,33 @@ input[type='text']{
     }
 }
 
+@media screen and (max-width: 574px) {
+    .quickread-wrapper .article-wrapper{
+        width: 100%;
+        flex-direction: column;
+    }
+    .quickread-wrapper .article-wrapper .article-content{
+        display: flex;
+        width: 100%;
+        padding-bottom: 25px;
+        border-bottom: 1px solid rgba(112, 112, 112, 0.3);
+    }
+    .quickread-wrapper .article-wrapper .article-content:last-child{
+        border-bottom: none;
+    }
+    .quickread-wrapper .article-wrapper .article-content:hover{
+        box-shadow: none;
+    }
+    .quickread-wrapper .article-wrapper .article-content .para{
+        margin-left: 24px;
+        margin-top: 0;
+    }
+    .quickread-wrapper .article-wrapper .article-content .readmore-link{
+        margin-left: 24px;
+        margin-top: 45px;
+    }
+}
+
 @media screen and (max-width: 524px) {
     .searchbar-modal .searchbar-modal__content .faq-tab__wrapper .faq-tab{
         overflow-x: auto;
@@ -1582,6 +1631,16 @@ input[type='text']{
     .products-content .info-card::after{
         top: 80px;
     }
+    .quickread-wrapper .article-wrapper .article-content .banner-img{
+        width: 180px;
+    }
+    .quickread-wrapper .article-wrapper .article-content .para{
+        margin-left: 12px;
+    }
+    .quickread-wrapper .article-wrapper .article-content .readmore-link{
+        margin-top: 15px;
+        margin-left: 12px;
+    }
 }
 
 @media screen and (max-width: 425px){
@@ -1622,6 +1681,10 @@ input[type='text']{
     }
     .products-carousel .products-carousel__wrapper .owl-item{
         width: 100% !important;
+    }
+    
+    .quickread-wrapper .article-wrapper .article-content .readmore-link{
+        margin-top: 0;
     }
 }
 
