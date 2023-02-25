@@ -574,6 +574,21 @@
               </div>
               <div class="second-part"></div>
             </div>
+
+            <!-- Quick links section for mobile view below 768px -->
+            <div class="mobileQuicklinks">
+              <h5 class="title text-capitalize">Quick Links</h5>
+              <div class="d-flex links-wrapper">
+                <div class="links-wrapper__left">
+                  <a href="#" class="links">Raise A Compliant</a>
+                  <a href="#" class="links">Raise Fraudulant Transaction</a>
+                </div>
+                <div class="links-wrapper__right">
+                  <a href="#" class="links">Chat With Us</a>
+                  <a href="#" class="links">Call Us</a>
+                </div>
+              </div>
+            </div>
         </div>
         <div class="col-md-3 videos-wrapper">
           <div class="videos-sec">
@@ -1721,7 +1736,7 @@
 <script>
     $(document).ready(function () {
         $(".owl-carousel.selectionopt-carousel").owlCarousel({
-            items: 5,
+            items: 2,
             margin: 20,
             nav:true,
             navText:['<img class="prev-arrow" src="./assets/images/icons/left-arow.svg" alt="left">', '<img class="next-arrow" src="./assets/images/icons/left-arow.svg" alt="left">'],
@@ -1733,6 +1748,11 @@
             smartSpeed:500,
             autoplayHoverPause:true,
             rewind: true,
+            responsive:{
+              375:{
+                items: 5
+              }
+            }
         });
     
         /* Latest update carousel */
