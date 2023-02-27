@@ -649,6 +649,8 @@ input[type='text']{
     margin-bottom: 19px;
     cursor: pointer;
     transition: all 0.2s;
+    display: block;
+    width: fit-content;
 }
 .videos-wrapper .videos-sec .viewall-btn:hover{
     background: #97144D;
@@ -1767,7 +1769,7 @@ input[type='text']{
     }
     .updateinfo-sec .mobileQuicklinks 
     .links-wrapper::after{
-        left: 55%;
+        left: 60%;
     }
     
     .products-content .info-card{
@@ -1792,12 +1794,13 @@ input[type='text']{
     .updateinfo-sec .mobileQuicklinks .links-wrapper 
     .links-wrapper__left{
         width: 155px;
+        margin-left: -50px;
     }
     .updateinfo-sec .mobileQuicklinks .links-wrapper .links{
         padding-bottom: 20px;
     }
     .updateinfo-sec .mobileQuicklinks .links-wrapper::before{
-        top: 50%;
+        top: 45%;
         left: 50%;
     }
     .updateinfo-sec .mobileQuicklinks .links-wrapper::after{

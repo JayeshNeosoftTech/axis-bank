@@ -649,6 +649,8 @@ input[type='text']{
     margin-bottom: 19px;
     cursor: pointer;
     transition: all 0.2s;
+    display: block;
+    width: fit-content;
 }
 .videos-wrapper .videos-sec .viewall-btn:hover{
     background: #97144D;
