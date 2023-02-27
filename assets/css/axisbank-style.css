@@ -1303,6 +1303,66 @@ input[type='text']{
     display: none;
 }
 
+/* Contrast button style  */
+.excontrast-btn{
+    padding: 2px 5px;
+    color: #FFFFFF;
+    background: #000000;
+    cursor: pointer;
+}
+
+/* Black Theme style*/
+main.black_theme, main.black_theme .products-content, main.black_theme .quickread-wrapper,
+main.black_theme .reachus-wrapper,
+main.black_theme .searchbar .searchbar-modal,
+main.black_theme .searchbar-modal .searchbar-modal__content .searchbar-modal__banner .banner{
+    background: #212121;
+}
+
+main.black_theme .updateinfo-sec .heading-content .searchbar,
+main.black_theme .searchbar .searchbar-modal .searchbar-modal__inputfield{
+    background: #313131;
+}
+
+main.black_theme h2, main.black_theme h3, main.black_theme h4, main.black_theme h5,
+main.black_theme p, main.black_theme b, main.black_theme a, main.black_theme button{
+    color: #80ff00 !important;
+}
+
+main.black_theme .videos-wrapper .videos-sec .viewall-btn,
+main.black_theme .quickread-wrapper .viewall-btn,
+main.black_theme .additionalinfo-card__wrapper .viewall-btn.viewall-btn__mobile,
+main.black_theme .additionalinfo .heading-wrapper .viewall-btn{
+    background: #313131;
+    border: 1px solid #313131 !important;
+}
+
+main.black_theme  .products-carousel .products-carousel__wrapper .products-carousel__card,
+main.black_theme .downloadarticle-content .download-content .card-wrapper .cards,
+main.black_theme .reachncomplaint-content .reachus-wrapper .reachus-options .reachus-options__content,
+main.black_theme .additionalinfo .additionalinfo-card__wrapper .additionalinfo-card__content .additionalinfo-card,
+main.black_theme .searchbar-modal .searchbar-modal__content .searchbar-modal__banner .banner-wrapper .owl-carousel.banner-carousel .banner-carousel__content{
+    background: #313131;
+}
+
+main.black_theme .searchbar .searchbar-modal .searchbar-modal__inputfield input[type='text']{
+    background: transparent;
+    caret-color: #80ff00;
+    color: #80ff00;
+}
+
+main.black_theme .products-carousel .products-carousel__wrapper .card-icon,
+main.black_theme .downloadarticle-content .download-content .card-wrapper .cards .card-icons,
+main.black_theme .reachncomplaint-content .reachus-wrapper .reachus-options .reachus-options__content .icon-wrapper span:first-child,
+main.black_theme .additionalinfo .additionalinfo-card__wrapper .additionalinfo-card__content .additionalinfo-card .bank-icon,
+main.black_theme .quicklinks-sec__list li span.icon-chatus,
+main.black_theme .quicklinks-sec__list li span.icon-callus,
+main.black_theme .quicklinks-sec__list li span.icon-Fraudtransaction,
+main.black_theme .owl-carousel.selectionopt-carousel .owl-nav button.owl-next img,
+main.black_theme .owl-carousel.selectionopt-carousel .owl-nav button.owl-prev img{
+    filter: brightness(0) saturate(100%) invert(78%) sepia(97%) saturate(2111%) hue-rotate(30deg) brightness(91%) contrast(125%);
+}
+
 /* Media query */
 @media screen and (max-width: 1330px){
     .additionalinfo .additionalinfo-card__wrapper .additionalinfo-card__content{

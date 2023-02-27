@@ -37,6 +37,7 @@
             <li><button type="button" class="pr-2 pl-2 contrast1 mr-2 text-uppercase">a</button></li>
             <li><button type="button" class="pr-2 pl-2 contrast2 text-uppercase">a</button></li>
           </ul>
+          <input id="excontrast_btn" class="contrastChanger wob excontrast-btn" title="High Contrast View" type="submit" value="A">
         </div>
       </div>
     </div>
@@ -355,7 +356,7 @@
   </div> -->
   <!-- navbar part ends here -->
   <!--main section start-->
-  <main class="mb-5">
+  <main class="mb-5" id="main_body">
     <section class="updateinfo-sec row m-0">
         <div class="col-md-9 p-0 position-relative updateinfo-secCol">
             <div class="heading-content">
@@ -1853,6 +1854,12 @@
   document.getElementById('addInfo-viewAll_BtnMobile').addEventListener('click', function(){
     addInfo_cardWrapper.style.overflowY= 'auto';
     addInfo_cardWrapper.style.paddingBottom= '10px';
+  });
+
+
+  /* Contrast button code */
+  document.getElementById('excontrast_btn').addEventListener('click', function(){
+    document.getElementById("main_body").classList.add('black_theme');
   });
 
 </script>
