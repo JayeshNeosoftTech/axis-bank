@@ -1889,7 +1889,12 @@ main.black_theme .owl-carousel.selectionopt-carousel .owl-nav button.owl-prev im
         width: 100%;
         padding: 20px;
     }
-    
+}
+
+@media screen and (max-width: 367px) {
+    .products-carousel .products-carousel__wrapper .owl-item{
+        margin-right: 0 !important;
+    }
 }
 
 @media screen and (max-width: 375px){
